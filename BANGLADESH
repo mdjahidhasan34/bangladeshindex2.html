@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bangladesh Information Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  background: #f4f4f4;
+}
+
+header {
+  background: #006a4e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background: #004d3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  padding: 12px 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #007a5c;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+#msg {
+  font-weight: bold;
+  margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Bangladesh Information Website</h1>
+<p>Simple and personalised web project about Bangladesh</p>
+</header>
+
+<nav>
+<a href="#location">Location</a>
+<a href="#history">History</a>
+<a href="#war">War</a>
+<a href="#places">Places</a>
+<a href="#business">Business</a>
+<a href="#garments">Garments</a>
+<a href="#references">References</a>
+</nav>
+
+<div class="container">
+
+<h2>Enter your name</h2>
+<input type="text" id="name" placeholder="Type your name">
+<br>
+<button onclick="saveName()">Submit</button>
+
+<p id="msg"></p>
+
+<section id="location">
+<h2>Where Bangladesh is Located</h2>
+<p>Bangladesh is a country located in South Asia. It is surrounded by India on three sides and Myanmar on the southeast. The southern part is connected to the Bay of Bengal. This location is important for trade, weather, and culture.</p>
+<p>Bangladesh is known as a river-based country. Major rivers such as Padma, Meghna and Jamuna flow across the land. These rivers help agriculture and transportation. The soil is very fertile, which makes farming easier.</p>
+<p>The country has a large population and active economic life. Both rural and urban areas are developing quickly.</p>
+</section>
+
+<section id="history">
+<h2>History of Bangladesh</h2>
+<p>Bangladesh was part of British India before 1947. After the partition, it became East Pakistan. However, people faced many problems such as language discrimination and political inequality.</p>
+<p>The Language Movement in 1952 was very important. Students protested for the Bengali language, and some lost their lives. This created strong national identity.</p>
+<p>Later, political movements grew stronger, leading to the independence of Bangladesh in 1971.</p>
+</section>
+
+<section id="war">
+<h2>Liberation War of 1971</h2>
+<p>The Liberation War started in March 1971. The people of Bangladesh fought against Pakistani forces for independence.</p>
+<p>Many people sacrificed their lives. Freedom fighters showed great courage. The war lasted about nine months.</p>
+<p>Finally, on 16 December 1971, Bangladesh became an independent country. This day is now celebrated as Victory Day.</p>
+</section>
+
+<section id="places">
+<h2>Beautiful Places in Bangladesh</h2>
+<p>Cox’s Bazar is the longest natural sea beach in the world. It attracts many tourists every year.</p>
+<p>The Sundarbans is the largest mangrove forest and home of the Royal Bengal Tiger. It is also a UNESCO World Heritage site.</p>
+<p>There are also many rivers, hills, and green villages that make Bangladesh naturally beautiful.</p>
+</section>
+
+<section id="business">
+<h2>Business in Bangladesh</h2>
+<p>Bangladesh economy is growing fast. Many people are involved in small businesses, trade, and services.</p>
+<p>Digital business and online platforms are also becoming popular among young people.</p>
+<p>The country is developing in many sectors and creating more opportunities for employment.</p>
+</section>
+
+<section id="garments">
+<h2>Garments Industry</h2>
+<p>The garments sector is the largest industry in Bangladesh. It provides jobs to millions of people.</p>
+<p>Bangladesh exports clothes to many countries around the world. This industry plays a major role in economic growth.</p>
+<p>It has helped improve the standard of living and reduce unemployment.</p>
+</section>
+
+<section id="references">
+<h2>References</h2>
+<p>Wikipedia – Bangladesh History and Geography</p>
+<p>BBC News – Bangladesh Economy and Garments Sector</p>
+<p>National Geographic – Sundarbans Forest Information</p>
+<p>World Bank Reports – Bangladesh Development Data</p>
+</section>
+
+</div>
+
+<script>
+function saveName(){
+  let name = document.getElementById("name").value;
+
+  if(name.trim() === ""){
+    alert("Please enter your name");
+    return;
+  }
+
+  localStorage.setItem("username", name);
+  showMessage();
+}
+
+function showMessage(){
+  let user = localStorage.getItem("username");
+
+  if(user){
+    document.getElementById("msg").innerHTML = "Welcome " + user + ", explore Bangladesh";
+
+    if(user.toLowerCase() === "jahid"){
+      document.body.style.backgroundColor = "#e0f7fa";
+    } else {
+      document.body.style.backgroundColor = "#f1f8e9";
+    }
+  }
+}
+
+window.onload = showMessage;
+</script>
+
+</body>
+</html>

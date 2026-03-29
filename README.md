@@ -1,0 +1,10 @@
+Project Brief
+This project is a simple personalised website about Bangladesh. The main idea of this website is to take input from user and show some custom output. When user enter their name, the website show a welcome message using that name. Also the background colour can change based on user interaction. This makes the website more interesting and not static. The site also have different sections like Bangladesh location, history, culture and some general information. User can move to different section using navigation bar. The design is simple but focus on interaction and user experience.
+Purpose of Personalisation
+The purpose of personalisation in this website is to make the site more interactive. Normally website show same content for everyone, but here user can see different output based on what they input. This help user feel more connected with the website. It also make the website more modern and user friendly. Personalisation also can increase user interest and time spend on website.
+Likely Users
+The likely users of this website are students and beginner level users who want to know basic information about Bangladesh. Also people who like simple website with easy navigation can use this site. It is not complex system, so any general user can use without problem.
+User and Goal (Hypothesis)
+One example user is Rahim. He is a student and he want to learn about Bangladesh in short time. The assumption is that if the website show personalised message and simple content, Rahim will feel more interested. The hypothesis is that personalisation will increase user engagement and user will stay longer on the website instead of leaving quickly.
+How it Works
+The website take user input (name) using input field. After that, it display a welcome message using that name. Also the background colour can change when user interact with the site. There is a navigation bar which allow user to go different section like history, location and culture. All section are simple and easy to understand. So overall the website give a small personalised experience to the user.
